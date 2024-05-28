@@ -112,6 +112,6 @@ pub fn push_tags_and_head(
     if dry_run || cmd.status()?.success() {
         Ok(())
     } else {
-        bail!("'git push' invocation failed. Try to push manually and repeat the smart-release invocation to resume, possibly with --skip-push.");
+        bail!("'git push' invocation failed. Try to push manually and repeat the smart-release invocation to resume, possibly with --no-push.");
     }
 }
